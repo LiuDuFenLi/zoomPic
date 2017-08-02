@@ -11,15 +11,20 @@ li,ul{list-style:none}
 li img{display:block;background:#fff}
 a{color:#333;text-decoration:none}
 a:hover{color:#ff722c;text-decoration:none}
-.detail111 .img{width:214px;height:310px;overflow:hidden;position:relative; border:1px solid #ccc;}
-.detail111 .img {float:left;margin-right:10px;}
-.detail111 .img img{width:auto;height:auto;position:absolute;}
+.detail .img{width:142px;height:192px;overflow:hidden;position:relative; border:1px solid #ccc;}
+.detail .img {float:left;margin-right:10px;}
+.detail .img img{width:auto;height:auto;position:absolute;}
 .magn{transition:opacity 0.2s,transform 0.2s;}
 .magn:hover{transform:scale(1.1);}
+
+
+.detail1 .img{width:172px;height:272px;overflow:hidden;position:relative; border:1px solid #ccc;}
+.detail1 .img {float:left;margin-right:10px;}
+.detail1 .img img{width:auto;height:auto;position:absolute;}
 </style>
 </head>
 <body>
-<div class="detail111" style="margin:50px;">
+<div class="detail" style="margin:50px;">
 	<div class="img">
     	<img src="1.png" class="magn">
     </div>
@@ -41,11 +46,24 @@ a:hover{color:#ff722c;text-decoration:none}
     <div class="img">
     	<img src="7.png" class="magn">
     </div>
+    <div class="img">
+    	<img src="8.jpg" class="magn">
+    </div>
+</div>
+
+<div class="detail1" style="margin:50px;">
+	<div class="img">
+    	<img src="1.png" class="magn">
+    </div>
+    <div class="img">
+    	<img src="2.png" class="magn">
+    </div>
 </div>
 <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
 <script type="text/javascript" src="i.js"></script>
 <script type="text/javascript">
-controlPic.zoomPic(214,310,'.detail111 .img');
+controlPic.zoomPic(142,192,'.detail .img');
+controlPic.zoomPic(172,272,'.detail1 .img');
 </script>
 </body>
 </html>

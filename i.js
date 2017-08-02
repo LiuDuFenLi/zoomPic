@@ -1,9 +1,10 @@
 var controlPic = {
-	zoomPic:function(){
+	zoomPic:function(a,b,c){
 		var thisWidth,thisHeight,imgLeft,imgTop;
-		var imgWidth = 214;
-		var imgHeight = 310;
-		$('.detail .img').each(function(){
+		var imgWidth = a;
+		var imgHeight = b;
+		var imgBlock = c;
+		$(imgBlock).each(function(){
 			thisWidth = $(this).find('img').width();
 			thisHeight = $(this).find('img').height();
 			if(thisWidth > imgWidth && thisHeight > imgHeight){//如果宽，高都大
